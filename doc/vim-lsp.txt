@@ -209,7 +209,7 @@ support TCP. Set your cmd to use your netcat executable (`nc` on unix-likes),
 localhost, and your server's port. The Godot game engine uses 6008 as its LSP
 port and godot ftplugins define gdscript or gdscript3 filetype: >
 
-	au User lsp_setup 
+	au User lsp_setup
 	    \ call lsp#register_server({
 	    \     'name': 'godot',
 	    \     'cmd': ["nc", "localhost", "6008"],
@@ -1425,49 +1425,49 @@ Mappings                                                  *vim-lsp-mappings*
 
 To map keys to the feature of vim-lsp, use <plug> mappings:
 >
+  "                          use map(nmap,xmap,vmap...) command
   autocmd FileType python,go nmap gd <plug>(lsp-definition)
 <
 Available plug mappings are following:
 
-  nnoremap <plug>(lsp-code-action)
-  nnoremap <plug>(lsp-code-lens)
-  nnoremap <plug>(lsp-declaration)
-  nnoremap <plug>(lsp-peek-declaration)
-  nnoremap <plug>(lsp-definition)
-  nnoremap <plug>(lsp-peek-definition)
-  nnoremap <plug>(lsp-document-symbol)
-  nnoremap <plug>(lsp-document-diagnostics)
-  nnoremap <plug>(lsp-hover)
-  nnoremap <plug>(lsp-next-diagnostic)
-  nnoremap <plug>(lsp-next-diagnostic-nowrap)
-  nnoremap <plug>(lsp-next-error)
-  nnoremap <plug>(lsp-next-error-nowrap)
-  nnoremap <plug>(lsp-next-reference)
-  nnoremap <plug>(lsp-next-warning)
-  nnoremap <plug>(lsp-next-warning-nowrap)
-  nnoremap <plug>(lsp-preview-close)
-  nnoremap <plug>(lsp-preview-focus)
-  nnoremap <plug>(lsp-previous-diagnostic)
-  nnoremap <plug>(lsp-previous-diagnostic-nowrap)
-  nnoremap <plug>(lsp-previous-error)
-  nnoremap <plug>(lsp-previous-error-nowrap)
-  nnoremap <plug>(lsp-previous-reference)
-  nnoremap <plug>(lsp-previous-warning)
-  nnoremap <plug>(lsp-previous-warning-nowrap)
-  nnoremap <plug>(lsp-references)
-  nnoremap <plug>(lsp-rename)
-  nnoremap <plug>(lsp-workspace-symbol)
-  nnoremap <plug>(lsp-document-format)
-  vnoremap <plug>(lsp-document-format)
-  nnoremap <plug>(lsp-document-range-format)
-  xnoremap <plug>(lsp-document-range-format)
-  nnoremap <plug>(lsp-implementation)
-  nnoremap <plug>(lsp-peek-implementation)
-  nnoremap <plug>(lsp-type-definition)
-  nnoremap <plug>(lsp-peek-type-definition)
-  nnoremap <plug>(lsp-type-hierarchy)
-  nnoremap <plug>(lsp-status)
-  nnoremap <plug>(lsp-signature-help)
+	mode	mapping	  ~
+	n	<plug>(lsp-code-action)
+	n	<plug>(lsp-code-lens)
+	n	<plug>(lsp-declaration)
+	n	<plug>(lsp-peek-declaration)
+	n	<plug>(lsp-definition)
+	n	<plug>(lsp-peek-definition)
+	n	<plug>(lsp-document-symbol)
+	n	<plug>(lsp-document-diagnostics)
+	n	<plug>(lsp-hover)
+	n	<plug>(lsp-next-diagnostic)
+	n	<plug>(lsp-next-diagnostic-nowrap)
+	n	<plug>(lsp-next-error)
+	n	<plug>(lsp-next-error-nowrap)
+	n	<plug>(lsp-next-reference)
+	n	<plug>(lsp-next-warning)
+	n	<plug>(lsp-next-warning-nowrap)
+	n	<plug>(lsp-preview-close)
+	n	<plug>(lsp-preview-focus)
+	n	<plug>(lsp-previous-diagnostic)
+	n	<plug>(lsp-previous-diagnostic-nowrap)
+	n	<plug>(lsp-previous-error)
+	n	<plug>(lsp-previous-error-nowrap)
+	n	<plug>(lsp-previous-reference)
+	n	<plug>(lsp-previous-warning)
+	n	<plug>(lsp-previous-warning-nowrap)
+	n	<plug>(lsp-references)
+	n	<plug>(lsp-rename)
+	n	<plug>(lsp-workspace-symbol)
+	n,v	<plug>(lsp-document-format)
+	n,x	<plug>(lsp-document-range-format)
+	n	<plug>(lsp-implementation)
+	n	<plug>(lsp-peek-implementation)
+	n	<plug>(lsp-type-definition)
+	n	<plug>(lsp-peek-type-definition)
+	n	<plug>(lsp-type-hierarchy)
+	n	<plug>(lsp-status)
+	n	<plug>(lsp-signature-help)
 
 See also |vim-lsp-commands|
 
